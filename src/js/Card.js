@@ -8,17 +8,18 @@ export class Card {
     } else {
       this.buttonText = 'MORE'
     }
-    this.prepareOwnElement()
+    this.prepareOwnElement();
   }
 
   prepareOwnElement = () => {
     const cardDiv = document.createElement("div")
-    cardDiv.classList.add("cards-container__card card")
+    cardDiv.classList.add("cards-container__card")
+    cardDiv.classList.add("card")
     cardDiv.innerHTML = `
-      <img src="${eventData.image_url}" alt="image of ${eventData.name}">
-      <h2 class="card__event-name">${eventData.name}</h2>
-      <h3 class="card__event-date">${eventData.date}</>
-      <p class="card__event-description">${eventData.description}</p>
+      <img src="${this.eventData.image_url}" alt="image of ${this.eventData.name}">
+      <h2 class="card__event-name">${this.eventData.name}</h2>
+      <h3 class="card__event-date">${this.eventData.date}</>
+      <p class="card__event-description">${this.eventData.description}</p>
       <button class="card__event-button">${this.buttonText}</button>
     `
     // const textRatingElement = element.querySelector(".rating__value")
@@ -28,7 +29,7 @@ export class Card {
   }
 
   appendSelfToParent = (selector) => {
-    const parent = document.querySelector(selector)
-    parent.appendChild(this.element)
+    const parent = selector;
+    parent.appendChild(this.cardDiv)
   }
 }
