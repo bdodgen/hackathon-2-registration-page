@@ -18,10 +18,16 @@ const initPage = async () => {
     const allEventData = await getApiData();
     const cardsContainer = document.querySelector('.cards-container');
 
-    allEventData.forEach(event => {
-        const card = new Card(event);
+    allEventData.forEach((event, index) => {
+        const card = new Card(event, index);
         card.appendSelfToParent(cardsContainer);
-    });
+        const buttonSelect = document.querySelector(`.card${index}`)
+        buttonSelect.addEventListener('click', () => {
+            const newModal = new Modal(card.eventData.name, card.eventData.date, card.eventData.description, card.eventData.img_url, card.eventData.id)
+        });
+
+        //card.eventData.name, card.eventData.date, card.eventData.description, card.eventData.img_url, card.eventData.id
+    })
 }
 initPage();
 
@@ -29,8 +35,8 @@ const featuredCard = document.querySelector('.card');
 featuredCard.classList.add('featured-card');
 
 
-//Aidan's stuff below here
-const buttonSelect = document.querySelector('.button')
-buttonSelect.addEventListener('click', () => {
-    const newModal = new Modal()
-})
+    //Aidan's stuff below here
+    // const buttonSelect = document.querySelector('.card__event-button')
+    // buttonSelect.addEventListener('click', () => {
+    //     const newModal = new Modal()
+    // })

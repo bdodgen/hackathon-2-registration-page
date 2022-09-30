@@ -1,9 +1,11 @@
 export class Card {
-  constructor(eventData, isFeatured) {
+  constructor(eventData, index, isFeatured) {
     this.eventData = eventData
+    this.index = index
     this.cardDiv = null
     this.isFeatured = isFeatured ?? false
-    if (isFeatured === true) {
+    if (this.index === 0) {
+      this.isFeatured = true
       this.buttonText = 'REGISTER'
     } else {
       this.buttonText = 'MORE'
@@ -14,7 +16,7 @@ export class Card {
   prepareOwnElement = () => {
     const cardDiv = document.createElement("div")
     cardDiv.classList.add("cards-container__card")
-    cardDiv.classList.add("card")
+    cardDiv.classList.add(`card${this.index}`)
     cardDiv.innerHTML = `
       <img src="${this.eventData.image_url}" alt="image of ${this.eventData.name}">
       <h2 class="card__event-name">${this.eventData.name}</h2>
@@ -26,10 +28,13 @@ export class Card {
     // const stars = element.querySelectorAll(".rating__star")
 
     this.cardDiv = cardDiv
+
+
   }
 
   appendSelfToParent = (selector) => {
     const parent = selector;
     parent.appendChild(this.cardDiv)
   }
+
 }

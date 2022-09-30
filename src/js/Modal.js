@@ -1,9 +1,10 @@
 export class Modal {
-    constructor(name, date, description, image_url) {
+    constructor(name, date, description, image_url, id) {
         this.name = name
         this.date = date
         this.description = description
         this.image_url = image_url
+        this.id = id
 
         const modalSelect = document.querySelector('.modal')
 
@@ -33,12 +34,14 @@ export class Modal {
         const newDiv = document.querySelector('.modal__content');
         newDiv.innerHTML += `
            <div class = "cards_modal">
-           <title>${name}<title>
+           <h2>${name}<h2>
            <span>${date}</span>
            <p>${description}</p>
            <img src="${image_url}" alt"">
            </div>
         `
+
+        // Selectors and click events
         modalSelect.style.display = "block"
         const closeSelect = document.querySelector('.modal__close')
         modalSelect.style.display = "block"
@@ -66,7 +69,7 @@ export class Modal {
         let pnum = document.getElementByID('pnum').value
         let age = document.getElementByID('age').value
 
-        const url = 'https://test-api.codingbootcamp.cz/api/cfb0622e/events/EVENT_ID/registrations'
+        const url = `https://test-api.codingbootcamp.cz/api/cfb0622e/events/${id}/registrations`
         const formDataToPass = {
             "fname": `${fname}`,
             "lname": `${lname}`,
