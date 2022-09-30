@@ -1,23 +1,28 @@
 .header {
-    background-color: aliceblue;
+    background-color: lightgrey;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+    height: 30px;
+    font-size: 10px;
 }
 
 nav {
-    background-color: aqua;
+    
     display: flex;
-    width: 200px;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+    width: 200px;
 }
 
 .cards-container {
-    background-color: blanchedalmond;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-left: 10%;
+    padding-top: 10px;
 
 }
 
@@ -25,29 +30,38 @@ nav {
 
     &.feature-card{
         border-radius: 25px;
-        background-color: rgb(222, 135, 183);
+        background-color: lightgrey;
+        color: black;
         
 }
 
     &.cards__title1{
-    background-color: cornflowerblue;
-    border-radius: 25px;
-    width: 30%;
-    text-align: center;
+        background-color: lightgrey;
+        border-radius: 25px;
+        width: 30%;
+        text-align: center;
+        color: black;
 }
 
     &.cards__title2{
-        background-color: darkgreen;
+        background-color: lightgrey;
         border-radius: 25px;
         width: 30%;
         text-align: center;
+        color: black;
     }
 
     &.cards__title3{
-        background-color: darkkhaki;
+        background-color: lightgrey;
         border-radius: 25px;
         width: 30%;
         text-align: center;
+        color: black;
+    }
+
+    &.feature-card__ivent{
+        background-color: lightgrey;
+        // writing-mode: vertical-rl; 
     }
 }
 
