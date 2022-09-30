@@ -1,122 +1,98 @@
-
 .header {
-    background-color: lightgrey;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    height: 30px;
-    font-size: 10px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  height: 30px;
+  font-size: 10px;
 }
 
 nav {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    width: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  width: 200px;
 }
 
 .cards-container {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
-    padding-top: 10px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 10px;
 
-}
-
-.card {
-
-    &.feature-card{
-        border-radius: 25px;
-        background-color: lightgrey;
-        color: black;    
-    }
-
-    &.cards__title1{
-        background-color: lightgrey;
-        border-radius: 25px;
-        width: 30%;
-        text-align: center;
-        color: black;
-    }
-
-    &.cards__title2{
-        background-color: lightgrey;
-        border-radius: 25px;
-        width: 30%;
-        text-align: center;
-        color: black;
-    }
-
-    &.cards__title3{
-        background-color: lightgrey;
-        border-radius: 25px;
-        width: 30%;
-        text-align: center;
-        color: black;
-    }
-
-    &.feature-card__ivent{
-        background-color: lightgrey;
-        // writing-mode: vertical-rl; 
-    }
 }
 
 .cards {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featured-card {
+  border-radius: 25px;
+  background-color: lightgrey;
+  color: black;
+  width: 100%;
+}
+
+.card {
+  background-color: lightgrey;
+  border-radius: 25px;
+  width: 30%;
+  text-align: center;
+  color: black;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
