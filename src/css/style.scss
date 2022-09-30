@@ -1,3 +1,78 @@
+
+.header {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    height: 30px;
+    font-size: 10px;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    width: 200px;
+}
+
+.cards-container {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 10px;
+
+}
+
+.card {
+
+    &.feature-card{
+        border-radius: 25px;
+        background-color: lightgrey;
+        color: black;    
+    }
+
+    &.cards__title1{
+        background-color: lightgrey;
+        border-radius: 25px;
+        width: 30%;
+        text-align: center;
+        color: black;
+    }
+
+    &.cards__title2{
+        background-color: lightgrey;
+        border-radius: 25px;
+        width: 30%;
+        text-align: center;
+        color: black;
+    }
+
+    &.cards__title3{
+        background-color: lightgrey;
+        border-radius: 25px;
+        width: 30%;
+        text-align: center;
+        color: black;
+    }
+
+    &.feature-card__ivent{
+        background-color: lightgrey;
+        // writing-mode: vertical-rl; 
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* The Modal (background) */
 .modal {
     display: none;

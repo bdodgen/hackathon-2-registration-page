@@ -6,6 +6,7 @@ export class Modal {
         this.image_url = image_url
 
         const modalSelect = document.querySelector('.modal')
+
         modalSelect.innerHTML = `
             <div class="modal__content" >
             <span class="modal__close">&times;</span>
@@ -29,8 +30,19 @@ export class Modal {
             </form>
         </div>
         `
+        const newDiv = document.querySelector('.modal__content');
+        newDiv.innerHTML += `
+           <div class = "cards_modal">
+           <title>${name}<title>
+           <span>${date}</span>
+           <p>${description}</p>
+           <img src="${image_url}" alt"">
+           </div>
+        `
         modalSelect.style.display = "block"
         const closeSelect = document.querySelector('.modal__close')
+        modalSelect.style.display = "block"
+
         closeSelect.addEventListener('click', () => {
             modalSelect.style.display = "none"
         })
@@ -68,5 +80,3 @@ export class Modal {
         console.log(myUsableResponse)
     }
 }
-
-
