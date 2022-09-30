@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import { Modal } from 'js/Modal.js'
+import { Modal } from './Modal.js'
 
 // Bri's stuff below here: making all the cards
 const eventApiUrl = "https://test-api.codingbootcamp.cz/api/cfb0622e/events";
