@@ -7,10 +7,20 @@ export class Modal {
 
         const modalSelect = document.querySelector('.modal')
         modalSelect.style.display = "block"
+        
+        const newDiv = document.querySelector('.modal__content');
+        newDiv.innerHTML += `
+           <div class = "cards_modal">
+           <title>${name}<title>
+           <span>${date}</span>
+           <p>${description}</p>
+           <img src="${image_url}" alt"">
+           </div>
+        `
     }
 
     eventRegister() {
-        const modalSelect = document.querySelector('.modal')
+        // const modalSelect = document.querySelector('.modal')
         const closeSelect = document.querySelector('.modal__close')[0]
         closeSelect.addEventListener('click', () => {
             modalSelect.style.display = "none"
@@ -19,6 +29,6 @@ export class Modal {
             modalSelect.style.display = "none"
         })
     }
+    
 }
-
 
