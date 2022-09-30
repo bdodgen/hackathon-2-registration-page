@@ -24,6 +24,9 @@ const initPage = async () => {
 }
 initPage();
 
+const featuredCard = document.querySelector('.card');
+featuredCard.classList.add('featured-card');
+
 
 //Aidan's stuff below here
 const buttonSelect = document.querySelector('button')
