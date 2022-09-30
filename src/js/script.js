@@ -1,4 +1,4 @@
-import { Modal } from 'js/Modal.js'
+import { Modal } from './Modal.js'
 
 const buttonSelect = document.querySelector('button')
 buttonSelect.addEventListener('click', () => {

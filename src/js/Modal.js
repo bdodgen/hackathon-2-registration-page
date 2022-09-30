@@ -10,7 +10,6 @@ export class Modal {
     }
 
     eventRegister() {
-        const modalSelect = document.querySelector('.modal')
         const closeSelect = document.querySelector('.modal__close')[0]
         closeSelect.addEventListener('click', () => {
             modalSelect.style.display = "none"
@@ -19,6 +18,8 @@ export class Modal {
             modalSelect.style.display = "none"
         })
     }
+
+
 }
 
 
