@@ -11,11 +11,11 @@
 
 <body>
     <div class="header">
-        <h1></h1>
+        <h1>EVENTS IN PRAGUE</h1>
         <nav>
-            <a></a>
-            <a></a>
-            <a></a>
+            <a>Home</a>
+            <a>About</a>
+            <a>Contact</a>
         </nav>
     </div>
 
@@ -28,7 +28,38 @@
             <p>Event description</p>
             <button>Register</button>
         </div>
-        <div class="cards"></div>
+
+        <div class="cards">
+            <div class="card cards__title1">
+                <h2>Event Name</h2>
+                <button>More</button>
+            </div>
+            <div class="card cards__title2">
+                <h2>Event Name</h2>
+                <button>More</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal">
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="email">Email adress:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="pnum">Phone number:</label>
+            <input type="text" id="pnum" name="pnum">
+
+            <label for="age">I'm old enough to participate</label>
+            <input type="checkbox" id="age" name="age">
+        </form>
     </div>
 
     <script src="js/script.js"></script>
