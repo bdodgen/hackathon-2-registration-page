@@ -51,6 +51,11 @@ export class Modal {
                 modalSelect.style.display = "none"
             }
         })
+
+        const regButtonSelect = document.querySelector('.modal__register')
+        regButtonSelect.addEventListener('click', () => {
+            sendForm()
+        })
     }
 
 
