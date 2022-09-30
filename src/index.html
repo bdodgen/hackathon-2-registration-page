@@ -26,17 +26,17 @@
             <img src="#" alt="">
             <h2>Event Name</h2>
             <p>Event description</p>
-            <button>Register</button>
+            <button id="registerbutton">Register</button>
         </div>
 
         <div class="cards">
-            <div class="card cards__title1">
+            <div class="card cards__card">
                 <h2>Event Name</h2>
                 <button>More</button>
             </div>
-            <div class="card cards__title2">
+            <div class="card cards__card">
                 <h2>Event Name</h2>
-                <button>More</button>
+                <button id="moreinfo">More</button>
             </div>
             <div class="card cards__title3">
                 <h2>Event Name</h2>
@@ -48,22 +48,25 @@
 
 
     <div class="modal">
-        <form>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
 
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
 
-            <label for="email">Email adress:</label>
-            <input type="text" id="email" name="email">
+                <label for="email">Email adress:</label>
+                <input type="text" id="email" name="email">
 
-            <label for="pnum">Phone number:</label>
-            <input type="text" id="pnum" name="pnum">
+                <label for="pnum">Phone number:</label>
+                <input type="text" id="pnum" name="pnum">
 
-            <label for="age">I'm old enough to participate</label>
-            <input type="checkbox" id="age" name="age">
-        </form>
+                <label for="age">I'm old enough to participate</label>
+                <input type="checkbox" id="age" name="age">
+            </form>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
